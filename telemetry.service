@@ -1,0 +1,10 @@
+[Unit]
+Description=Telemetry Streamlit Service
+
+[Service]
+ExecStart=/home/lebewob/miniforge3/bin/streamlit run /home/lebewob/Telemetry/main.py
+WorkingDirectory=/home/lebewob/Telemetry
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
